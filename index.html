@@ -34,6 +34,8 @@
             padding: 10px 10px 10px 10px;
             margin: 60px auto;
             border-radius: 15px;
+            max-width: 1400px;
+            width: 100%;
             box-shadow: 3px 5px 20px rgba(255, 255, 255, 0.375);
         }
 
@@ -49,7 +51,7 @@
         }
 
         .rightcont {
-            padding:0 10px 0 10px;
+            padding: 0 10px 0 10px;
             text-align: left;
             background-color: rgba(255, 255, 255, 0.865);
             width: 700px;
@@ -59,7 +61,7 @@
         }
 
         .contheader {
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: bold;
             margin-top: 0px;
             font-size: 30px;
@@ -106,7 +108,8 @@
             font-size: 20px;
 
         }
-/* changetest */
+
+
         .tinyresult {
             font-size: 20px;
             margin-top: 80px;
@@ -121,6 +124,7 @@
             margin-bottom: 14px;
             text-underline-offset: 2px;
         }
+
         .columname {
             border-radius: 12px;
             color: #202b4c;
@@ -167,6 +171,38 @@
             /* Adds a shadow for a "floating" look */
         }
 
+        @media (max-width: 900px) {
+            .maindiv {
+                flex-direction: column;
+                /* stack children vertically */
+                align-items: stretch;
+                gap: 24px;
+                max-width: 98vw;
+                /* let the container shrink nicely */
+                width: 98vw;
+                /* override to fit viewport width */
+                padding: 8px;
+            }
+
+            .leftcont,
+            .rightcont {
+                width: 100% !important;
+                /* make the columns full-width inside the container */
+                min-width: 0;
+                /* prevent overflow */
+                box-sizing: border-box;
+            }
+        }
+
+        @media (max-width: 900px) {
+            table {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+                white-space: nowrap;
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
