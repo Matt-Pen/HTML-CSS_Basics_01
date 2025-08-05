@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>student info and course details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #202b4c;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .collegename {
+            text-align: center;
+            font-weight: lighter;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 3px;
+            text-decoration: underline;
+            text-underline-offset: 7px;
+            font-size: 50px;
+        }
+
+        .maindiv {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            background-color: rgba(29, 42, 160, 0.437);
+            padding: 10px 10px 10px 10px;
+            margin: 60px auto;
+            border-radius: 15px;
+            box-shadow: 3px 5px 20px rgba(255, 255, 255, 0.375);
+        }
+
+        .leftcont {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.865);
+            width: 700px;
+            height: 550px;
+            text-align: left;
+            border-radius: 15px;
+
+        }
+
+        .rightcont {
+            padding:0 10px 0 10px;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.865);
+            width: 700px;
+            height: 550px;
+            border-radius: 15px;
+
+        }
+
+        .contheader {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            margin-top: 0px;
+            font-size: 30px;
+            padding-top: 15px;
+            padding-left: 32px;
+            line-height: 38px;
+            margin-bottom: 14px;
+
+        }
+
+        .gridinleft {
+            display: grid;
+            padding: 0 10px 0 28px;
+            background-color: rgba(255, 255, 255, 0);
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px 30px;
+
+        }
+
+        .leftinleft {
+
+            text-align: left;
+            background-color: rgb(255, 255, 255);
+            width: 275px;
+            min-height: 125px;
+            padding: 15px 10px 0 10px;
+            border-radius: 15px;
+            box-shadow: 3px 5px 20px rgba(82, 82, 82, 0.241);
+        }
+
+        .leftinright {
+
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.865);
+            width: 275px;
+            min-height: 125px;
+            padding: 15px 10px 0 10px;
+            border-radius: 15px;
+            box-shadow: 3px 5px 20px rgba(82, 82, 82, 0.241);
+        }
+
+        .tinyhead {
+            font-size: 20px;
+
+        }
+
+        .tinyresult {
+            font-size: 20px;
+            margin-top: 80px;
+        }
+
+        .headerdiv1 {
+            font-size: 25px;
+            margin-top: 0;
+            padding-top: 10px;
+            padding-left: 10px;
+            line-height: 32px;
+            margin-bottom: 14px;
+            text-underline-offset: 2px;
+        }
+        .columname {
+            border-radius: 12px;
+            color: #202b4c;
+            background-color: #d8d8d8;
+            display: grid;
+            text-align: center;
+            padding: 5px 15px 5px 15px;
+            font-size: 25px;
+            max-width: 875px;
+            margin: 0 auto;
+            grid-template-columns: 150px 400px 1fr;
+            margin-bottom: 7px;
+
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .columname:hover {
+            transform: translateY(-6px);
+            /* Moves the div up by 10px */
+            box-shadow: 0 8px 16px rgba(69, 69, 69, 0.841);
+            /* Adds a shadow for a "floating" look */
+        }
+
+        .coursecolumn {
+            border-radius: 12px;
+            color: #202b4c;
+            background-color: #d8d8d8;
+            display: grid;
+            text-align: center;
+            padding: 5px 15px 5px 15px;
+            font-size: 25px;
+            max-width: 875px;
+            margin: 0 auto;
+            grid-template-columns: 140px 450px 1fr;
+            margin-bottom: 7px;
+
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .coursecolumn:hover {
+            transform: translateY(-6px);
+            /* Moves the div up by 10px */
+            box-shadow: 0 8px 16px rgba(69, 69, 69, 0.871);
+            /* Adds a shadow for a "floating" look */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="collegename">
+        Kristu Jayanti University
+    </div>
+    <div class="maindiv">
+        <div class="leftcont">
+            <p class="contheader"><u>
+                    Student Details</u>
+            </p>
+            <div class="gridinleft">
+                <div class="leftinleft">
+                    <span class="tinyhead"><b><u>Name Of Student</u></b></span><br>
+                    <br>
+                    <span class="tinyresult">Matthew Panachamoottil Eapen</span>
+                </div>
+                <div class="leftinright">
+                    <span class="tinyhead"><b><u>Programme</u></b></span><br>
+                    <br>
+                    <span class="tinyresult">Bachelor Of Computer Appplications</span>
+                </div>
+                <div class="leftinleft">
+                    <span class="tinyhead"><b><u>Section</u></b></span><br>
+                    <br>
+                    <span class="tinyresult">V BCA F</span>
+                </div>
+                <div class="leftinright">
+                    <span class="tinyhead"><b><u>Roll Number</u></b></span><br>
+                    <br>
+                    <span class="tinyresult">23BCAF36</span>
+                </div>
+                <div class="leftinleft">
+                    <span class="tinyhead"><b><u>University Name</u></b></span><br>
+                    <br>
+                    <span class="tinyresult">Kristu Jayanti University</span>
+                </div>
+                <div class="leftinright">
+                    <span class="tinyhead"><b><u>Department</u></b></span><br>
+                    <br>
+                    <span class="tinyresult">Computer Science</span>
+                </div>
+            </div>
+        </div>
+        <div class="rightcont">
+            <p class="headerdiv1"><u style="text-underline-offset: 2px;"><b>Department of computer science</b></u></br>
+                Vth Semester Courses:
+            </p>
+            <div class="columname">
+                <span class="columns"><b>Course Code</b></span>
+                <span class="columns"><b>Course Name</b></span>
+                <span class="columns"><b>Course Marks</b></span>
+            </div>
+            <div class="coursecolumn">
+                <span class="columns"> 21BCAAT351</span>
+                <span class="columns">Internet Technologies</span>
+                <span class="columns">45</span>
+            </div>
+            <div class="coursecolumn">
+                <span class="columns">21BCA2T452</span>
+                <span class="columns">Python Programming</span>
+                <span class="columns">45</span>
+            </div>
+
+            <div class="coursecolumn">
+                <span class="columns">21BCA2T453</span>
+                <span class="columns">Cloud Computing</span>
+                <span class="columns">45</span>
+            </div>
+
+            <div class="coursecolumn">
+                <span class="columns">21BCA2T451</span>
+                <span class="columns">Data Warehousing and Data Mining</span>
+                <span class="columns">60</span>
+            </div>
+
+            <div class="coursecolumn">
+                <span class="columns">21BCA2T452</span>
+                <span class="columns">Automation Testing</span>
+                <span class="columns">45</span>
+            </div>
+
+            <div class="coursecolumn">
+                <span class="columns">21BCA2L251</span>
+                <span class="columns">Data Warehousing and Data Mining Practical</span>
+                <span class="columns">45</span>
+            </div>
+
+
+
+            <div class="coursecolumn">
+                <span class="columns">21BCA2L252</span>
+                <span class="columns">Python Programming Practical</span>
+                <span class="columns">45</span>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
